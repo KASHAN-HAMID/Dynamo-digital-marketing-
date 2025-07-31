@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light mode - professional clean look */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    /* Professional color palette - dark, light black, grey, sky blue */
+    --primary: 200 100% 60%; /* Sky blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 200 100% 70%;
+
+    --secondary: 0 0% 20%; /* Light black */
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 200 15% 80%; /* Light grey with blue tint */
+    --accent-foreground: 0 0% 5%;
+
+    --muted: 0 0% 95%; /* Light grey */
+    --muted-foreground: 0 0% 40%; /* Dark grey */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 88%; /* Light grey border */
+    --input: 0 0% 88%;
+    --ring: 200 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 60%), hsl(200 100% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 10%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 12%));
+    --gradient-heading: linear-gradient(135deg, hsl(200 100% 60%), hsl(0 0% 20%), hsl(200 100% 70%));
+    --gradient-text: linear-gradient(90deg, hsl(0 0% 5%), hsl(200 100% 50%), hsl(0 0% 15%));
+    
+    /* Professional shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(200 100% 60% / 0.2);
+    --shadow-glow: 0 0 40px hsl(200 100% 70% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 5% / 0.1);
+
+    /* Animation timing */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Dark mode - professional dark look */
+    --background: 0 0% 3%; /* Very dark background */
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 5%; /* Dark card background */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 200 100% 65%; /* Bright sky blue for dark mode */
+    --primary-foreground: 0 0% 5%;
+    --primary-glow: 200 100% 75%;
+
+    --secondary: 0 0% 15%; /* Light black for dark mode */
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 0 0% 12%; /* Dark grey */
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 0 0% 8%; /* Dark grey */
+    --muted-foreground: 0 0% 65%; /* Light grey text */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%; /* Dark border */
+    --input: 0 0% 15%;
+    --ring: 200 100% 65%;
+
+    /* Enhanced shadows for dark mode */
+    --shadow-elegant: 0 10px 30px -10px hsl(200 100% 65% / 0.4);
+    --shadow-glow: 0 0 40px hsl(200 100% 75% / 0.5);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --gradient-heading: linear-gradient(135deg, hsl(200 100% 65%), hsl(0 0% 98%), hsl(200 100% 75%));
+    --gradient-text: linear-gradient(90deg, hsl(0 0% 98%), hsl(200 100% 60%), hsl(0 0% 90%));
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
