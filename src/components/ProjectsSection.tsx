@@ -71,6 +71,54 @@ const projects = [
     icon: Palette,
     color: "from-purple-500 to-pink-500",
     viewable: true
+  },
+   {
+    id: 6,
+    title: "Corporate Brochure",
+    category: "Graphic Design",
+    description: "Tri-fold corporate brochure design.",
+    image: "/p5.jpg",
+    technologies: ["InDesign", "Photoshop"],
+    type: "design",
+    icon: Palette,
+    color: "from-indigo-500 to-purple-500",
+    viewable: true
+  },
+  {
+    id: 7,
+    title: "Standee",
+    category: "Graphic Design",
+    description: "Collection of promotional posters for events.",
+    image: "/p7.jpg",
+    technologies: ["Illustrator", "Figma"],
+    type: "design",
+    icon: Palette,
+    color: "from-pink-500 to-red-500",
+    viewable: true
+  },
+  {
+    id: 8,
+    title: "SEO Campaign Report",
+    category: "Digital Marketing",
+    description: "Complete SEO audit and strategy report.",
+    image: "/IMG-20250731-WA0082.jpg",
+    technologies: ["SEMRush", "Ahrefs"],
+    type: "pdf",
+    icon: Eye,
+    color: "from-green-500 to-blue-500",
+    url: "/d1.pdf"
+  },
+  {
+    id: 9,
+    title: "Social Media Strategy",
+    category: "Digital Marketing",
+    description: "Social media content plan and analytics.",
+    image: "/IMG-20250731-WA0080.jpg",
+    technologies: ["Meta Business", "Canva"],
+    type: "pdf",
+    icon: Eye,
+    color: "from-yellow-400 to-pink-500",
+    url: "/d2.pdf"
   }
   // Add more if needed...
 ];
